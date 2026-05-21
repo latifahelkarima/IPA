@@ -1,0 +1,110 @@
+{
+  "quizTitle": "Kuis: Listrik Dinamis",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Alat yang digunakan untuk mengukur kuat arus listrik secara langsung dalam suatu rangkaian adalah...",
+      "options": ["Voltmeter", "Amperemeter", "Ohmmeter", "Barometer"],
+      "answer": "Amperemeter",
+      "explanation": "Amperemeter adalah alat ukur yang dipasang secara seri pada rangkaian untuk mengetahui besar kuat arus listrik yang mengalir."
+    },
+    {
+      "id": 2,
+      "question": "Satuan Internasional (SI) yang digunakan untuk menyatakan besarnya hambatan listrik adalah...",
+      "options": ["Volt", "Ampere", "Ohm", "Coulomb"],
+      "answer": "Ohm",
+      "explanation": "Satuan SI untuk hambatan listrik adalah Ohm, disimbolkan dengan huruf Yunani Omega ($\\Omega$)."
+    },
+    {
+      "id": 3,
+      "question": "Jika muatan listrik sebesar $20\\text{ C}$ mengalir melalui seutas kawat selama $4\\text{ sekon}$, berapakah kuat arus listriknya?",
+      "options": ["5 A", "80 A", "0.2 A", "16 A"],
+      "answer": "5 A",
+      "explanation": "Menggunakan rumus $I = \\frac{Q}{t}$, maka $I = \\frac{20\\text{ C}}{4\\text{ s}} = 5\\text{ A}$."
+    },
+    {
+      "id": 4,
+      "question": "Arus listrik hanya dapat terus mengalir di dalam suatu rangkaian jika rangkaian tersebut berada dalam keadaan...",
+      "options": ["Terbuka", "Paralel saja", "Tertutup", "Seri saja"],
+      "answer": "Tertutup",
+      "explanation": "Pada rangkaian tertutup, terdapat jalur kontinu tak terputus yang memungkinkan elektron mengalir dari potensial rendah ke tinggi dan arus mengalir sebaliknya."
+    },
+    {
+      "id": 5,
+      "question": "Sebuah lampu memiliki hambatan sebesar $20\\ \\Omega$ dan dihubungkan pada sumber tegangan $10\\text{ V}$. Berapakah kuat arus yang mengalir?",
+      "options": ["2 A", "0.5 A", "200 A", "1.5 A"],
+      "answer": "0.5 A",
+      "explanation": "Berdasarkan Hukum Ohm: $I = \\frac{V}{R} = \\frac{10\\text{ V}}{20\\ \\Omega} = 0,5\\text{ A}$."
+    },
+    {
+      "id": 6,
+      "question": "Dua buah hambatan masing-masing bernilai $4\\ \\Omega$ dan $6\\ \\Omega$ dirangkai secara seri. Berapakah hambatan pengganti totalnya?",
+      "options": ["2.4 Ohm", "10 Ohm", "24 Ohm", "2 Ohm"],
+      "answer": "10 Ohm",
+      "explanation": "Untuk rangkaian seri, hambatan tinggal dijumlahkan langsung: $R_s = R_1 + R_2 = 4 + 6 = 10\\ \\Omega$."
+    },
+    {
+      "id": 7,
+      "question": "Jika tegangan pada suatu hambatan diperbesar menjadi 2 kali lipat semula sedangkan nilai hambatannya tetap, maka kuat arusnya menjadi...",
+      "options": ["Tetap", "0.5 kali semula", "2 kali lipat semula", "4 kali lipat semula"],
+      "answer": "2 kali lipat semula",
+      "explanation": "Menurut Hukum Ohm, kuat arus ($I$) sebanding dengan beda potensial ($V$). Jika tegangan naik 2 kali lipat, arus juga akan naik 2 kali lipat."
+    },
+    {
+      "id": 8,
+      "question": "Sebuah kawat penghantar memiliki hambatan $10\\ \\Omega$. Jika kawat tersebut dipotong tepat menjadi dua bagian yang sama panjang, hambatan masing-masing potongan kawat adalah...",
+      "options": ["10 Ohm", "20 Ohm", "5 Ohm", "2.5 Ohm"],
+      "answer": "5 Ohm",
+      "explanation": "Hambatan kawat sebanding dengan panjangnya ($R \\propto l$). Jika panjangnya menjadi setengah kali semula ($0,5l$), maka hambatannya juga menjadi setengahnya: $0,5 \\times 10\\ \\Omega = 5\\ \\Omega$."
+    },
+    {
+      "id": 9,
+      "question": "Perhatikan percabangan arus: Arus masuk bercabang menjadi tiga jalur dengan arus masing-masing $I_1 = 2\\text{ A}$, $I_2 = 3\\text{ A}$, dan $I_3 = 4\\text{ A}$. Berapakah total arus yang masuk sebelum bercabang?",
+      "options": ["5 A", "9 A", "24 A", "1 A"],
+      "answer": "9 A",
+      "explanation": "Berdasarkan Hukum I Kirchhoff: $\\sum I_{\\text{masuk}} = \\sum I_{\\text{keluar}} = 2 + 3 + 4 = 9\\text{ A}$."
+    },
+    {
+      "id": 10,
+      "question": "Dua buah hambatan yang masing-masing bernilai $6\\ \\Omega$ dirangkai paralel dan dihubungkan ke baterai $6\\text{ V}$. Berapakah kuat arus total yang keluar dari baterai?",
+      "options": ["1 A", "3 A", "0.5 A", "2 A"],
+      "answer": "2 A",
+      "explanation": "Hambatan paralel: $\\frac{1}{R_p} = \\frac{1}{6} + \\frac{1}{6} = \\frac{2}{6} \\implies R_p = 3\\ \\Omega$. Kuat arus total: $I = \\frac{V}{R_p} = \\frac{6\\text{ V}}{3\\ \\Omega} = 2\\text{ A}$."
+    },
+    {
+      "id": 11,
+      "question": "Sebuah setrika listrik memiliki spesifikasi $220\\text{ V} / 400\\text{ W}$ digunakan selama 2 jam. Berapakah energi listrik yang dikonsumsi setrika tersebut dalam satuan kWh?",
+      "options": ["800 kWh", "8 kWh", "0.8 kWh", "0.4 kWh"],
+      "answer": "0.8 kWh",
+      "explanation": "Energi listrik: $W = P \\times t = 400\\text{ W} \\times 2\\text{ jam} = 800\\text{ Wh}$. Konversi ke kWh dengan dibagi 1000: $800 / 1000 = 0,8\\text{ kWh}$."
+    },
+    {
+      "id": 12,
+      "question": "Mengapa instalasi lampu di rumah-rumah umumnya menggunakan rangkaian paralel?",
+      "options": ["Agar biaya listrik lebih murah", "Jika satu lampu padam, lampu lain tetap menyala", "Agar arus listrik yang mengalir di setiap lampu bernilai sama", "Supaya menghemat kabel instalasi"],
+      "answer": "Jika satu lampu padam, lampu lain tetap menyala",
+      "explanation": "Rangkaian paralel bercabang, sehingga jika salah satu cabang putus, cabang lain tetap mendapat aliran listrik. Selain itu, setiap alat mendapat tegangan yang sama besar dengan sumber."
+    },
+    {
+      "id": 13,
+      "question": "Sebuah kawat penghantar bermula dengan hambatan $R$. Jika kawat ditarik secara merata hingga panjangnya menjadi 2 kali lipat semula (volume konstan), berapakah hambatannya sekarang?",
+      "options": ["2R", "4R", "0.5R", "0.25R"],
+      "answer": "4R",
+      "explanation": "Ketika panjang ($l$) dikali 2, karena volume konstan, luas penampang ($A$) mengecil jadi setengah ($\\frac{1}{2}$). Berdasarkan rumus $R = \\rho \\frac{l}{A}$, hambatan baru menjadi: $R_{\\text{baru}} = \\rho \\frac{2l}{\\frac{1}{2}A} = 4R$."
+    },
+    {
+      "id": 14,
+      "question": "Sebuah pemanas air dengan spesifikasi $200\\text{ V} / 500\\text{ W}$ dipasang pada jaringan listrik yang tegangannya turun menjadi $100\\text{ V}$. Berapakah daya listrik yang dihasilkan sekarang?",
+      "options": ["250 W", "125 W", "100 W", "500 W"],
+      "answer": "125 W",
+      "explanation": "Daya sebanding dengan kuadrat tegangan ($P \\propto V^2$) karena hambatan internal alat tetap. Jika tegangan turun menjadi setengah ($\\frac{100}{200} = \\frac{1}{2}$), maka dayanya menjadi $(\\frac{1}{2})^2 = \\frac{1}{4}$ dari daya semula. $P_2 = \\frac{500}{4} = 125\\text{ W}$."
+    },
+    {
+      "id": 15,
+      "question": "Tiga buah baterai dengan GGL $\\epsilon = 2\\text{ V}$ dan hambatan dalam $r = 0,5\\ \\Omega$ dirangkai seri, lalu dihubungkan dengan hambatan luar sebesar $4,5\\ \\Omega$. Berapakah kuat arus rangkaian tersebut?",
+      "options": ["1 A", "1.2 A", "2 A", "0.75 A"],
+      "answer": "1 A",
+      "explanation": "Total GGL seri: $\\epsilon_{\\text{tot}} = 3 \\times 2\\text{ V} = 6\\text{ V}$. Total hambatan dalam: $r_{\\text{tot}} = 3 \\times 0,5\\ \\Omega = 1,5\\ \\Omega$. Kuat arus $I = \\frac{\\epsilon_{\\text{tot}}}{R + r_{\\text{tot}}} = \\frac{6}{4,5 + 1,5} = \\frac{6}{6} = 1\\text{ A}$."
+    }
+  ]
+}

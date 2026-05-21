@@ -1,0 +1,8 @@
+{
+  "bottomNav": [
+    { "id": "home", "label": "Beranda", "icon": "home", "href": "/" },
+    { "id": "materi", "label": "Materi", "icon": "menu_book", "href": "/materi/" },
+    { "id": "progress", "label": "Progress", "icon": "bar_chart", "href": "#progress" },
+    { "id": "settings", "label": "Pengaturan", "icon": "settings", "href": "#settings" }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-05-09",
+  "categories": [
+    { "id": "all", "label": "Semua", "icon": "grid_view" },
+    { "id": "biologi", "label": "biologi", "icon": "mosque" },
+    { "id": "kimia", "label": "kimia", "icon": "functions" },
+    { "id": "fisika", "label": "fisika", "icon": "science" }
+  ],
+  "materi": [
+    {
+      "id": "listrik-dinamis",
+      "slug": "listrik-dinamis",
+      "title": "Listrik Dinamis",
+      "description": "Pelajari aliran muatan listrik, Hukum Ohm, rangkaian seri-paralel, Hukum Kirchhoff, hingga perhitungan energi daya listrik.",
+      "category": "fisika",
+      "thumbnail": "",
+      "totalConcepts": 6,
+      "estimatedTime": "20 menit",
+      "difficulty": "sedang",
+      "tags": ["fisika", "listrik", "kelas 9"],
+      "published": true
+    },
+    {
+      "id": "listrik-statis",
+      "slug": "listrik-statis",
+      "title": "Listrik Statis",
+      "description": "Pelajari fenomena muatan listrik, struktur atom, hukum Coulomb, serta alasan ilmiah mengapa rambut bisa berdiri saat mendung!",
+      "category": "fisika",
+      "thumbnail": "",
+      "totalConcepts": 6,
+      "estimatedTime": "20 menit",
+      "difficulty": "sedang",
+      "tags": ["Fisika", "IPA", "Kelas 9"],
+      "published": true
+    },
+    {
+      "id": "tekanan-fisika",
+      "slug": "tekanan-fisika",
+      "title": "Tekanan (Zat Padat, Cair, & Pascal)",
+      "description": "Materi tekanan fisika kelas 9 MTs Ma'arif Jumo lengkap dengan simulasi rumus kuis interaktif.",
+      "category": "fisika",
+      "thumbnail": "",
+      "totalConcepts": 6,
+      "estimatedTime": "15 menit",
+      "difficulty": "mudah",
+      "tags": ["tekanan", "fisika", "pascal", "hidrostatis"],
+      "published": true
+    }
+  ]
+}

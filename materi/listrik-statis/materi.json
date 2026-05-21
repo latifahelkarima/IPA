@@ -1,0 +1,92 @@
+{
+  "title": "Listrik Statis",
+  "description": "Modul lengkap interaktif tentang muatan listrik, struktur atom, hukum Coulomb, medan listrik, hingga fenomena kelistrikan di kehidupan sehari-hari.",
+  "theme": "physics",
+  "concepts": [
+    {
+      "id": "muatan-dan-atom",
+      "title": "Muatan Listrik dan Struktur Atom",
+      "icon": "blur_on",
+      "content": "Atom adalah unit terkecil dari suatu materi. Di dalam atom terdapat partikel subatomik yang menentukan jenis muatannya. <img src='[PASTE_LINK_GAMBAR_UNTUK_STRUKTUR_ATOM_DISINI]' style='width:100%; border-radius:12px; margin:16px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);'> Hanya **elektron** yang dapat berpindah dari satu benda ke benda lain melalui gesekan atau kontak, sedangkan proton dan neutron tertanam kuat di inti atom.",
+      "steps": [
+        "**Proton**: Muatan positif (terletak di inti atom).",
+        "**Neutron**: Netral/tidak bermuatan (terletak di inti atom).",
+        "**Elektron**: Muatan negatif (bergerak mengelilingi inti atom pada kulit atom).",
+        "**Benda Netral**: Jumlah proton = jumlah elektron.",
+        "**Benda Bermuatan Positif**: Kehilangan/kekurangan elektron (proton > elektron).",
+        "**Benda Bermuatan Negatif**: Menerima/kelebihan elektron (proton < elektron)."
+      ],
+      "summary": "Interaksi dua muatan: Muatan sejenis akan tolak-menolak, sedangkan muatan tidak sejenis akan tarik-menarik."
+    },
+    {
+      "id": "hukum-coulomb",
+      "title": "Hukum Coulomb",
+      "icon": "bolt",
+      "content": "Hukum Coulomb menyatakan bahwa gaya tarik-menarik atau tolak-menolak antara dua benda bermuatan listrik sebanding dengan besar masing-masing muatan dan berbanding terbalik dengan kuadrat jarak antara kedua muatan tersebut.",
+      "steps": [
+        "Rumus Matematis: $$F = k \\cdot \\frac{q_1 \\cdot q_2}{r^2}$$",
+        "**F** = Gaya Coulomb (Newton, $N$)",
+        "**k** = Konstanta Coulomb ($9 \\times 10^9 \\, N\\cdot m^2/C^2$)",
+        "**q₁, q₂** = Besar muatan listrik (Coulomb, $C$)",
+        "**r** = Jarak antara dua muatan (meter, $m$)"
+      ],
+      "summary": "Gaya Coulomb berbanding lurus dengan besar muatan dan berbanding terbalik dengan kuadrat jarak benda."
+    },
+    {
+      "id": "medan-listrik",
+      "title": "Medan Listrik",
+      "icon": "stream",
+      "content": "Medan listrik adalah daerah di sekitar muatan listrik yang masih dipengaruhi oleh gaya listrik. Visualisasi medan listrik digambarkan menggunakan garis-garis gaya listrik. <img src='[PASTE_LINK_GAMBAR_UNTUK_GARIS_MEDAN_LISTRIK_DISINI]' style='width:100%; border-radius:12px; margin:16px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);'> Rumus Kuat Medan Listrik ($E$): $$E = \\frac{F}{q_0} \\quad \\text{atau} \\quad E = k \\cdot \\frac{q}{r^2}$$",
+      "steps": [
+        "Arah garis medan listrik muatan **positif** adalah **keluar** (menjauhi muatan).",
+        "Arah garis medan listrik muatan **negatif** adalah **masuk** (menuju muatan).",
+        "**E** = Kuat medan listrik ($N/C$)",
+        "**q** = Muatan sumber ($C$)",
+        "**q₀** = Muatan uji ($C$)"
+      ],
+      "summary": "Medan listrik digambarkan menjauhi muatan positif dan mendekati muatan negatif."
+    },
+    {
+      "id": "beda-potensial",
+      "title": "Beda Potensial & Energi Listrik",
+      "icon": "battery_charging_full",
+      "content": "Untuk memindahkan muatan listrik dari satu titik ke titik lain dalam medan listrik diperlukan energi listrik. Hubungan antara energi, muatan, dan beda potensial dirumuskan secara matematis.",
+      "steps": [
+        "Rumus: $$V = \\frac{W}{q}$$",
+        "**V** = Beda potensial listrik atau tegangan (Volt, $V$)",
+        "**W** = Energi listrik (Joule, $J$)",
+        "**q** = Muatan listrik (Coulomb, $C$)"
+      ],
+      "summary": "Beda potensial adalah besarnya energi yang dibutuhkan untuk memindahkan setiap satuan muatan listrik."
+    },
+    {
+      "id": "contoh-soal",
+      "title": "Contoh Soal & Pembahasan",
+      "icon": "assignment",
+      "content": "Mari kita bedah contoh soal Hukum Coulomb berikut untuk memperkuat pemahaman matematis Anda.",
+      "steps": [
+        "**Soal**: Dua muatan bermuatan $2 \\, \\mu C$ dan $3 \\, \\mu C$ terpisah pada jarak $3 \\, cm$. Hitung besar gaya Coulombnya! ($1 \\, \\mu C = 10^{-6} \\, C$)",
+        "**Diketahui**: $q_1 = 2 \\times 10^{-6} \\, C$, $q_2 = 3 \\times 10^{-6} \\, C$, $r = 3 \\times 10^{-2} \\, m$, $k = 9 \\times 10^9$",
+        "**Proses Hitung**:",
+        "$$F = (9 \\times 10^9) \\cdot \\frac{(2 \\times 10^{-6}) \\cdot (3 \\times 10^{-6})}{(3 \\times 10^{-2})^2}$$",
+        "$$F = (9 \\times 10^9) \\cdot \\frac{6 \\times 10^{-12}}{9 \\times 10^{-4}}$$",
+        "$$F = \\frac{54 \\times 10^{-3}}{9 \\times 10^{-4}} = 6 \\times 10^1 = 60 \\, N$$",
+        "**Kesimpulan**: Jadi, gaya Coulomb yang terjadi adalah **60 N**."
+      ],
+      "summary": "Pastikan mengubah satuan mikro Coulomb (μC) ke Coulomb (C) dan centimeter (cm) ke meter (m) sebelum menghitung."
+    },
+    {
+      "id": "fenomena-petir",
+      "title": "Fenomena Induksi: Mengapa Rambut Berdiri?",
+      "icon": "thunderstorm",
+      "content": "Pernahkah Anda memperhatikan rambut seseorang sedikit berdiri saat cuaca mendung di dekat area gejala petir? Ini terjadi akibat prinsip **induksi listrik statis**. <img src='[PASTE_LINK_GAMBAR_UNTUK_INDUKSI_PETIR_RAMBUT_DISINI]' style='width:100%; border-radius:12px; margin:16px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);'>",
+      "steps": [
+        "Awan mendung bagian bawah mengumpulkan muatan negatif yang sangat besar.",
+        "Muatan negatif di awan menginduksi (mendorong) elektron di permukaan bumi dan tubuh manusia masuk ke dalam tanah.",
+        "Bagian atas tubuh (terutama ujung rambut) menjadi bermuatan positif secara temporer.",
+        "Karena setiap helai rambut bermuatan positif (sejenis), helai rambut saling tolak-menolak dan berdiri menjauh."
+      ],
+      "summary": "Induksi listrik menyebabkan pemisahan muatan pada tubuh manusia sehingga rambut tegak karena gaya tolak-menolak muatan sejenis."
+    }
+  ]
+}

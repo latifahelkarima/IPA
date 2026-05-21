@@ -1,0 +1,85 @@
+{
+  "title": "Tekanan (Zat Padat, Cair, & Hukum Pascal)",
+  "description": "Modul pembelajaran tekanan fisika untuk kelas 9 MTs Ma'arif Jumo.",
+  "theme": "math",
+  "concepts": [
+    {
+      "id": "konsep-1",
+      "title": "Pengertian & Tekanan Zat Padat",
+      "icon": "layers",
+      "content": "Dalam fisika, **tekanan** adalah besarnya gaya yang bekerja tegak lurus per satuan luas permukaan bidang. Pada zat padat, tekanan dipengaruhi oleh gaya dan luas permukaan bidang sentuh. Semakin kecil luas permukaan, tekanan akan semakin besar.",
+      "steps": [
+        "Rumus Utama: $$P = \\frac{F}{A}$$",
+        "P = Tekanan (Pascal / $N/m^2$)",
+        "F = Gaya (Newton)",
+        "A = Luas permukaan bidang sentuh ($m^2$)",
+        "Jika gaya berupa berat benda, gunakan rumus gaya berat: $F = w = m \\times g$"
+      ],
+      "summary": "Tekanan berbanding lurus dengan gaya dan berbanding terbalik dengan luas bidang sentuh."
+    },
+    {
+      "id": "konsep-2",
+      "title": "Contoh Soal Tekanan Zat Padat",
+      "icon": "assignment",
+      "content": "Mari pelajari penerapan rumus zat padat melalui contoh kasus berikut:\n\n**Soal:** Sebuah balok kayu memiliki berat 200 N diletakkan di atas lantai. Jika luas alas balok yang menyentuh lantai adalah $2\\ m^2$, berapakah tekanan yang dialami lantai?",
+      "steps": [
+        "Diketahui: $F = 200\\ N$, $A = 2\\ m^2$",
+        "Ditanya: $P$?",
+        "Perhitungan: $$P = \\frac{F}{A} = \\frac{200}{2} = 100\\ N/m^2$$"
+      ],
+      "summary": "Tekanan yang dialami lantai akibat balok kayu adalah $100\\ Pa$ atau $100\\ N/m^2$."
+    },
+    {
+      "id": "konsep-3",
+      "title": "Tekanan Hidrostatis (Zat Cair)",
+      "icon": "water_drop",
+      "content": "Tekanan hidrostatis adalah tekanan yang dimiliki oleh zat cair yang diam akibat pengaruh kedalaman. Semakin dalam posisi suatu benda dari permukaan zat cair, maka tekanan hidrostatisnya akan semakin besar.",
+      "steps": [
+        "Rumus Utama: $$P_h = \\rho \\times g \\times h$$",
+        "P_h = Tekanan hidrostatis ($N/m^2$ atau $Pa$)",
+        "$\\rho$ = Massa jenis zat cair ($kg/m^3$)",
+        "g = Percepatan gravitasi ($m/s^2$)",
+        "h = Kedalaman benda dihitung **dari permukaan** air ($m$)"
+      ],
+      "summary": "Kedalaman zat cair berbanding lurus dengan besarnya tekanan hidrostatis yang dihasilkan."
+    },
+    {
+      "id": "konsep-4",
+      "title": "Contoh Soal Tekanan Hidrostatis",
+      "icon": "assignment",
+      "content": "Mari perhatikan perhitungan kedalaman zat cair berikut:\n\n**Soal:** Seorang penyelam berada pada kedalaman 5 meter di bawah permukaan air laut. Jika massa jenis air laut adalah $1.000\\ kg/m^3$ dan percepatan gravitasi bumi $10\\ m/s^2$, hitunglah tekanan hidrostatis yang dialami penyelam!",
+      "steps": [
+        "Diketahui: $h = 5\\ m$, $\\rho = 1.000\\ kg/m^3$, $g = 10\\ m/s^2$",
+        "Ditanya: $P_h$?",
+        "Perhitungan: $$P_h = \\rho \\times g \\times h = 1.000 \\times 10 \\times 5 = 50.000\\ N/m^2$$"
+      ],
+      "summary": "Tekanan hidrostatis yang dialami oleh penyelam tersebut adalah $50.000\\ Pa$."
+    },
+    {
+      "id": "konsep-5",
+      "title": "Hukum Pascal",
+      "icon": "speed",
+      "content": "Hukum Pascal menyatakan bahwa tekanan yang diberikan kepada zat cair di dalam ruang tertutup akan diteruskan ke segala arah dengan sama besar. Aplikasi hukum ini dapat dijumpai pada dongkrak hidrolik, rem hidrolik, dan mesin pengangkat mobil hidrolik.",
+      "steps": [
+        "Rumus Utama: $$\\frac{F_1}{A_1} = \\frac{F_2}{A_2}$$",
+        "F_1 = Gaya pada penampang kecil ($N$)",
+        "A_1 = Luas penampang kecil ($m^2$)",
+        "F_2 = Gaya pada penampang besar ($N$)",
+        "A_2 = Luas penampang besar ($m^2$)"
+      ],
+      "summary": "Melalui Hukum Pascal, gaya kecil pada penampang kecil dapat menghasilkan gaya angkat yang besar pada penampang besar."
+    },
+    {
+      "id": "konsep-6",
+      "title": "Contoh Soal Hukum Pascal",
+      "icon": "assignment",
+      "content": "Berikut adalah simulasi mekanis dongkrak hidrolik:\n\n**Soal:** Sebuah dongkrak hidrolik memiliki luas penampang kecil $A_1 = 10\\ cm^2$ dan luas penampang besar $A_2 = 100\\ cm^2$. Jika pada penampang kecil diberi gaya $F_1 = 50\\ N$, berapakah gaya angkat $F_2$ yang dihasilkan?",
+      "steps": [
+        "Diketahui: $A_1 = 10\\ cm^2$, $A_2 = 100\\ cm^2$, $F_1 = 50\\ N$",
+        "Substitusi Rumus: $$\\frac{50}{10} = \\frac{F_2}{100}$$",
+        "Perhitungan: $$5 = \\frac{F_2}{100} \\implies F_2 = 5 \\times 100 = 500\\ N$$"
+      ],
+      "summary": "Gaya angkat mekanis yang dihasilkan pada penampang besar adalah sebesar $500\\ N$."
+    }
+  ]
+}

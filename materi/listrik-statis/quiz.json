@@ -1,0 +1,80 @@
+{
+  "quizTitle": "Kuis Interaktif: Listrik Statis",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Bagian atom yang bermuatan negatif dan dapat berpindah dari satu benda ke benda lain disebut...",
+      "options": ["Proton", "Neutron", "Elektron", "Inti atom"],
+      "answer": "Elektron",
+      "explanation": "Elektron berada di kulit atom dan memiliki ikatan yang lebih lemah dibandingkan proton dan neutron di inti atom, sehingga elektronlah yang berpindah saat terjadi gejala listrik statis."
+    },
+    {
+      "id": 2,
+      "question": "Jika sebatang plastik digosok dengan kain wol, maka plastik tersebut akan bermuatan... karena...",
+      "options": [
+        "Positif, elektron dari plastik pindah ke wol",
+        "Negatif, elektron dari wol pindah ke plastik",
+        "Positif, proton dari wol pindah ke plastik",
+        "Negatif, proton dari plastik pindah ke wol"
+      ],
+      "answer": "Negatif, elektron dari wol pindah ke plastik",
+      "explanation": "Kain wol merelakan elektronnya berpindah ke plastik, sehingga plastik kelebihan elektron (bermuatan negatif) dan wol kekurangan elektron (bermuatan positif)."
+    },
+    {
+      "id": 3,
+      "question": "Dua buah muatan masing-masing bermuatan positif (+) dan negatif (-). Jika kedua muatan tersebut didekatkan, maka yang terjadi adalah...",
+      "options": ["Tolak-menolak", "Tarik-menarik", "Tidak terjadi interaksi", "Berputar bersamaan"],
+      "answer": "Tarik-menarik",
+      "explanation": "Sifat muatan listrik yang tidak sejenis jika didekatkan akan saling tarik-menarik."
+    },
+    {
+      "id": 4,
+      "question": "Satuan internasional (SI) dari muatan listrik adalah...",
+      "options": ["Newton", "Coulomb", "Volt", "Ampere"],
+      "answer": "Coulomb",
+      "explanation": "Newton adalah satuan Gaya, Coulomb satuan Muatan Listrik, Volt satuan Tegangan/Beda Potensial, dan Ampere satuan Kuat Arus."
+    },
+    {
+      "id": 5,
+      "question": "Garis-garis gaya medan listrik pada muatan positif digambarkan...",
+      "options": ["Masuk menuju pusat muatan", "Keluar menjauhi pusat muatan", "Melingkari muatan", "Saling berpotongan"],
+      "answer": "Keluar menjauhi pusat muatan",
+      "explanation": "Berdasarkan kesepakatan arah medan listrik, arah garis gaya listrik menjauhi muatan positif dan mendekati muatan negatif."
+    },
+    {
+      "id": 6,
+      "question": "Dua buah muatan listrik didekatkan sehingga menghasilkan gaya Coulomb sebesar F. Jika jarak antara kedua muatan tersebut dijauhkan menjadi 2 kali jarak semula, maka gaya Coulombnya menjadi...",
+      "options": ["2 F", "4 F", "1/2 F", "1/4 F"],
+      "answer": "1/4 F",
+      "explanation": "Gaya Coulomb berbanding terbalik dengan kuadrat jarak (F ~ 1/r²). Jika jarak (r) menjadi 2r, maka gaya menjadi 1/(2)² = 1/4 kali semula."
+    },
+    {
+      "id": 7,
+      "question": "Gaya Coulomb yang dialami oleh muatan uji sebesar 2 x 10⁻⁵ C dalam sebuah medan listrik adalah 4 x 10⁻³ N. Kuat medan listrik pada muatan uji tersebut adalah...",
+      "options": ["200 N/C", "100 N/C", "20 N/C", "2 N/C"],
+      "answer": "200 N/C",
+      "explanation": "E = F / q = (4 x 10⁻³) / (2 x 10⁻⁵) = 2 x 10² = 200 N/C."
+    },
+    {
+      "id": 8,
+      "question": "Untuk memindahkan muatan sebesar 5 C dari titik A ke titik B diperlukan energi sebesar 60 Joule. Beda potensial antara titik A dan titik B adalah...",
+      "options": ["12 Volt", "300 Volt", "0,08 Volt", "55 Volt"],
+      "answer": "12 Volt",
+      "explanation": "V = W / q = 60 / 5 = 12 Volt."
+    },
+    {
+      "id": 9,
+      "question": "Alat yang digunakan untuk mendeteksi keberadaan muatan listrik pada suatu benda disebut...",
+      "options": ["Elektroskop", "Voltmeter", "Amperemeter", "Termometer"],
+      "answer": "Elektroskop",
+      "explanation": "Elektroskop adalah alat laboratorium yang digunakan untuk mengetahui apakah suatu benda bermuatan listrik atau tidak."
+    },
+    {
+      "id": 10,
+      "question": "Dua muatan sejenis q₁ dan q₂ berada pada jarak r memiliki gaya tolak F. Jika muatan q₁ diubah menjadi 3 kali semula sedangkan q₂ dan jarak tetap, gaya tolaknya menjadi...",
+      "options": ["F", "3 F", "6 F", "9 F"],
+      "answer": "3 F",
+      "explanation": "Gaya Coulomb sebanding dengan perkalian kedua muatan (F ~ q₁ . q₂). Jika salah satu muatan menjadi 3 kali lipat, maka gayanya naik menjadi 3 kali lipat semula (3F)."
+    }
+  ]
+}

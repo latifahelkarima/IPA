@@ -1,0 +1,77 @@
+{
+  "title": "Listrik Dinamis",
+  "description": "Pelajari aliran muatan listrik, Hukum Ohm, rangkaian hambatan, hingga perhitungan energi dan daya listrik sehari-hari.",
+  "theme": "math",
+  "concepts": [
+    {
+      "id": "arus-listrik",
+      "title": "Arus Listrik & Kuat Arus",
+      "icon": "bolt",
+      "content": "Listrik dinamis adalah aliran muatan listrik yang mengalir melalui suatu penghantar. Arus listrik mengalir dari **potensial tinggi (kutub positif)** ke **potensial rendah (kutub negatif)**. Sebaliknya, elektron mengalir dari potensial rendah ke potensial tinggi.\n\nKuat arus listrik ($I$) adalah banyaknya muatan listrik ($Q$) yang mengalir melalui penampang penghantar setiap sekon ($t$).",
+      "steps": [
+        "Rumus Kuat Arus: $$I = \\frac{Q}{t}$$",
+        "$I$ = Kuat arus listrik (Ampere / A)",
+        "$Q$ = Muatan listrik (Coulomb / C)",
+        "$t$ = Waktu (sekon / s)"
+      ],
+      "summary": "Arus mengalir dari kutub positif ke negatif akibat perpindahan elektron ke arah sebaliknya. Kuat arus dihitung dengan membagi jumlah muatan dengan waktu."
+    },
+    {
+      "id": "hukum-ohm",
+      "title": "Hukum Ohm",
+      "icon": "speed",
+      "content": "Hukum Ohm menyatakan bahwa besar kuat arus yang mengalir melalui sebuah penghantar **sebanding** dengan beda potensial (tegangan) di ujung-ujung penghantar tersebut, dengan syarat suhunya konstan.",
+      "steps": [
+        "Rumus Tegangan: $$V = I \\times R$$",
+        "$V$ = Beda potensial atau tegangan (Volt / V)",
+        "$R$ = Hambatan listrik (Ohm / $\\Omega$)"
+      ],
+      "summary": "Semakin besar tegangan, semakin besar kuat arus yang mengalir jika nilai hambatan penghantarnya tetap."
+    },
+    {
+      "id": "hambatan-kawat",
+      "title": "Hambatan Kawat Penghantar",
+      "icon": "linear_scale",
+      "content": "Besar nilai hambatan pada kawat penghantar dipengaruhi secara spesifik oleh sifat fisik kawat tersebut, yaitu: jenis bahan, panjang kawat, dan luas penampang kawat.",
+      "steps": [
+        "Rumus Hambatan Kawat: $$R = \\rho \\frac{l}{A}$$",
+        "$\\rho$ = Hambatan jenis kawat ($\\Omega \\cdot \\text{m}$)",
+        "$l$ = Panjang kawat (m)",
+        "$A$ = Luas penampang kawat ($\\text{m}^2$)"
+      ],
+      "summary": "Hambatan berbanding lurus dengan panjang kawat dan hambatan jenisnya, namun berbanding terbalik dengan luas penampang kawat."
+    },
+    {
+      "id": "rangkaian-hambatan",
+      "title": "Rangkaian Seri & Paralel",
+      "icon": "device_hub",
+      "content": "Hambatan dapat dirangkai dengan dua cara utama:\n\n1. **Rangkaian Seri**: Hambatan disusun berurutan. Arus yang mengalir di setiap hambatan bernilai sama besar ($I_{\\text{tot}} = I_1 = I_2$).\n2. **Rangkaian Paralel**: Hambatan disusun sejajar atau bercabang. Tegangan di setiap percabangan bernilai sama besar ($V_{\\text{tot}} = V_1 = V_2$).",
+      "steps": [
+        "Formula Seri: $$R_s = R_1 + R_2 + R_3 + \\dots$$",
+        "Formula Paralel: $$\\frac{1}{R_p} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\frac{1}{R_3} + \\dots$$"
+      ],
+      "summary": "Rangkaian seri berfungsi sebagai pembagi tegangan dengan arus tetap, sedangkan rangkaian paralel berfungsi sebagai pembagi arus dengan tegangan tetap."
+    },
+    {
+      "id": "hukum-kirchhoff",
+      "title": "Hukum I Kirchhoff",
+      "icon": "call_split",
+      "content": "Hukum I Kirchhoff didasarkan pada prinsip kekekalan muatan. Hukum ini menyatakan bahwa jumlah kuat arus listrik yang masuk ke suatu titik percabangan akan sama persis dengan jumlah kuat arus yang keluar dari titik percabangan tersebut.",
+      "steps": [
+        "Persamaan: $$\\sum I_{\\text{masuk}} = \\sum I_{\\text{keluar}}$$"
+      ],
+      "summary": "Total arus yang menuju sebuah percabangan tidak berkurang ataupun bertambah saat keluar dari percabangan."
+    },
+    {
+      "id": "energi-daya",
+      "title": "Energi & Daya Listrik",
+      "icon": "wb_incandescent",
+      "content": "Setiap peralatan listrik yang digunakan akan mengubah energi listrik menjadi bentuk energi lain. Hambatan dalam alat menentukan seberapa besar energi listrik yang diserap per satuan waktu.",
+      "steps": [
+        "Energi Listrik ($W$): $$W = V \\times I \\times t = I^2 \\times R \\times t = \\frac{V^2}{R} \\times t$$",
+        "Daya Listrik ($P$): $$P = \\frac{W}{t} = V \\times I = I^2 \\times R = \\frac{V^2}{R}$$"
+      ],
+      "summary": "Energi listrik dihitung dari daya dikalikan waktu penggunaan. Satuan komersial untuk menghitung tagihan listrik rumah tangga adalah kWh (kilowatt-hour)."
+    }
+  ]
+}

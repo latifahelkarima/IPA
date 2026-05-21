@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Aplikasi Materi</title>
+  <link rel="stylesheet" href="../../assets/css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+  <script src="../../assets/js/storage.js" defer></script>
+  <script src="../../assets/js/app.js" defer></script>
+  <script src="../../assets/js/focus-card.js" defer></script>
+  <style>
+    .focus-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: var(--bg-surface); z-index: 1000; transform: translateY(100%); transition: transform 0.4s cubic-bezier(0.2, 0, 0, 1); display: flex; flex-direction: column; }
+    .focus-overlay.active { transform: translateY(0); }
+    .focus-header { padding: 16px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-subtle); background-color: var(--nav-bg); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+    .focus-body { flex: 1; overflow-y: auto; padding: 24px; padding-bottom: 100px; }
+    .focus-nav { position: absolute; bottom: 0; left: 0; right: 0; padding: 16px 24px; background-color: var(--nav-bg); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; padding-bottom: calc(16px + env(safe-area-inset-bottom, 0px)); }
+  </style>
+</head>
+<body>
+  <div class="app-container container">
+    <a href="../../index.html" style="display: inline-flex; align-items: center; gap: 8px; color: var(--text-secondary); text-decoration: none; margin-top: 16px; font-weight: 600;"><span class="material-icons">arrow_back</span> Kembali</a>
+    <header class="anim-fade-down mt-4">
+      <div class="date-badge mb-2">IPA (Fisika)</div>
+      <h1 class="text-h1" id="materi-title">Memuat...</h1>
+      <p class="text-body mt-2" id="materi-desc">Tunggu sebentar...</p>
+    </header>
+    <section class="mt-4">
+      <h2 class="text-h3 mb-4">Daftar Konsep</h2>
+      <div id="concept-list" class="flex-col gap-3">
+         <div class="skeleton" style="height: 80px; width: 100%; border-radius: var(--radius-md);"></div>
+      </div>
+    </section>
+  </div>
+  <div class="focus-overlay" id="focus-overlay">
+    <div class="focus-header"><span class="date-badge" style="background: transparent; color: var(--text-tertiary); font-size: 1rem;"><span class="material-icons" style="margin-right: 8px;">menu_book</span> Focus Mode</span><button class="btn-icon" id="btn-close-focus" style="width: 40px; height: 40px;"><span class="material-icons">close</span></button></div>
+    <div class="focus-body"><div style="max-width: 600px; margin: 0 auto;" id="focus-content"></div></div>
+    <div class="focus-nav"><button class="btn btn-outline" id="btn-prev" style="padding: 10px 16px;"><span class="material-icons">arrow_back</span></button><button class="btn btn-outline" id="btn-next" style="padding: 10px 24px; margin-left: auto;">Lanjut <span class="material-icons">arrow_forward</span></button></div>
+  </div>
+  <script>document.addEventListener('DOMContentLoaded', () => { const initCard = () => { if(window.FocusCardManager) { window.FocusCardManager.init('materi.json'); } else { setTimeout(initCard, 100); } }; initCard(); });</script>
+</body>
+</html>
