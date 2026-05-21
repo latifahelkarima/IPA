@@ -1,0 +1,177 @@
+/* ================================================
+   THEME.CSS — Design Tokens & CSS Variables
+   IPA Premium Science Sphere Excellence
+   ================================================ */
+
+:root {
+  /* ─── Font ─── */
+  --font-latin: 'Outfit', 'Inter', sans-serif;
+  --font-arabic: 'LPMQ Isep Misbah', 'Amiri', 'Noto Naskh Arabic', serif;
+  --font-javanese: 'Noto Sans Javanese', sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* ─── Radius ─── */
+  --radius-sm: 16px;
+  --radius-md: 24px;
+  --radius-lg: 32px;
+  --radius-full: 9999px;
+
+  /* ─── Spacing ─── */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* ─── Animation ─── */
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-decelerate: cubic-bezier(0, 0, 0, 1);
+  --ease-accelerate: cubic-bezier(0.3, 0, 1, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duration-short: 150ms;
+  --duration-medium: 250ms;
+  --duration-long: 400ms;
+}
+
+/* ─────────────────────────────────────────
+   LIGHT THEME (default)
+───────────────────────────────────────── */
+:root,
+[data-theme="light"] {
+  /* Background */
+  --bg-surface: #FFFFFF;
+  --bg-surface-alt: #f1f5f9;
+  --bg-card: rgba(255, 255, 255, 0.9);
+  --bg-card-hover: #f8fafc;
+  --bg-overlay: rgba(0, 0, 0, 0.5);
+  --bg-blur: rgba(255, 255, 255, 0.9);
+
+  /* Text */
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-tertiary: #94a3b8;
+  --text-on-accent: #FFFFFF;
+
+  /* Colors (IPA Premium Science Sphere) */
+  --accent-primary: #0f766e; /* Deep Teal */
+  --accent-primary-dark: #115e59;
+  --accent-primary-light: #ccfbf1;
+  
+  --accent-secondary: #d97706; /* Electric Amber */
+  --accent-success: #10b981;
+  --accent-warning: #f59e0b;
+  --accent-danger: #ef4444;
+  --accent-info: #06b6d4;
+
+  /* Badges */
+  --badge-bg: #ecfeff;
+  --badge-text: #115e59;
+
+  /* Border */
+  --border-subtle: rgba(15, 118, 110, 0.08); /* Soft teal border */
+  --border-normal: rgba(15, 118, 110, 0.15);
+
+  /* Nav */
+  --nav-bg: rgba(255, 255, 255, 0.9);
+  --nav-active: var(--accent-secondary); /* Electric Amber for active nav */
+  --nav-inactive: #94a3b8;
+
+  /* Category chips */
+  --chip-bg: var(--badge-bg);
+  --chip-bg-active: var(--accent-primary);
+  --chip-text: var(--badge-text);
+  --chip-text-active: #FFFFFF;
+
+  /* Shadows - pointing to deep teal */
+  --shadow-premium: 0 10px 25px -5px rgba(15, 118, 110, 0.1), 0 8px 10px -6px rgba(15, 118, 110, 0.1);
+  --shadow-1: 0 4px 6px -1px rgba(15, 118, 110, 0.05), 0 2px 4px -2px rgba(15, 118, 110, 0.05);
+  --shadow-2: 0 10px 15px -3px rgba(15, 118, 110, 0.08), 0 4px 6px -4px rgba(15, 118, 110, 0.08);
+}
+
+/* ─────────────────────────────────────────
+   DARK THEME
+───────────────────────────────────────── */
+[data-theme="dark"] {
+  /* Background */
+  --bg-surface: #0f172a;
+  --bg-surface-alt: #1e293b;
+  --bg-card: rgba(30, 41, 59, 0.9);
+  --bg-card-hover: #334155;
+  --bg-overlay: rgba(0, 0, 0, 0.7);
+  --bg-blur: rgba(15, 23, 42, 0.9);
+
+  /* Text */
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-tertiary: #64748b;
+  --text-on-accent: #FFFFFF;
+
+  /* Colors */
+  --accent-primary: #22d3ee; /* Neon Cyan for Dark Mode */
+  --accent-primary-dark: #0891b2;
+  --accent-primary-light: #083344;
+  
+  --accent-secondary: #f59e0b; /* Lighter Amber */
+  
+  /* Badges */
+  --badge-bg: rgba(15, 118, 110, 0.2);
+  --badge-text: #67e8f9;
+
+  /* Border */
+  --border-subtle: rgba(255, 255, 255, 0.05);
+  --border-normal: rgba(255, 255, 255, 0.10);
+
+  /* Nav */
+  --nav-bg: rgba(15, 23, 42, 0.9);
+  --nav-active: var(--accent-secondary);
+  --nav-inactive: #64748b;
+
+  /* Category chips */
+  --chip-bg: var(--bg-surface-alt);
+  --chip-bg-active: var(--accent-primary);
+  --chip-text: var(--text-primary);
+  --chip-text-active: #0f172a;
+
+  /* Shadows */
+  --shadow-premium: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+  --shadow-1: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --shadow-2: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+}
+
+/* ─── System auto dark mode ─── */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg-surface: #0f172a;
+    --bg-surface-alt: #1e293b;
+    --bg-card: rgba(30, 41, 59, 0.9);
+    --bg-card-hover: #334155;
+    --bg-overlay: rgba(0, 0, 0, 0.7);
+    --bg-blur: rgba(15, 23, 42, 0.9);
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --text-tertiary: #64748b;
+    --text-on-accent: #FFFFFF;
+    --accent-primary: #22d3ee;
+    --accent-primary-dark: #0891b2;
+    --accent-primary-light: #083344;
+    --accent-secondary: #f59e0b;
+    --badge-bg: rgba(15, 118, 110, 0.2);
+    --badge-text: #67e8f9;
+    --border-subtle: rgba(255, 255, 255, 0.05);
+    --border-normal: rgba(255, 255, 255, 0.10);
+    --nav-bg: rgba(15, 23, 42, 0.9);
+    --nav-active: var(--accent-secondary);
+    --nav-inactive: #64748b;
+    --chip-bg: var(--bg-surface-alt);
+    --chip-bg-active: var(--accent-primary);
+    --chip-text: var(--text-primary);
+    --chip-text-active: #0f172a;
+    --shadow-premium: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+    --shadow-1: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+    --shadow-2: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
+  }
+}

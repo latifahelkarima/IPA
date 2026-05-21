@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Media Pembelajaran Digital</title>
+  
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#4A6FE3">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+  
+  <!-- Scripts -->
+  <script src="./assets/js/storage.js" defer></script>
+  <script src="./assets/js/app.js" defer></script>
+
+  <style>
+    /* Home specific styles */
+    .header-section {
+      padding: var(--space-6) 0 var(--space-4);
+    }
+    
+    .category-scroll {
+      display: flex;
+      overflow-x: auto;
+      gap: var(--space-2);
+      padding-bottom: var(--space-2);
+      /* Hide scrollbar */
+      scrollbar-width: none; 
+      -ms-overflow-style: none;
+    }
+    .category-scroll::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .grid-materi {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: var(--space-4);
+      margin-top: var(--space-4);
+    }
+    
+    /* Mock components loading class */
+    .lesson-card-skeleton {
+      height: 180px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="app-container container">
+    
+    <!-- Header -->
+    <header class="header-section anim-fade-down">
+      <h1 class="text-h1">Halo, Selamat Belajar! 👋</h1>
+      <p class="text-body mt-2">Pilih materi yang ingin kamu pelajari hari ini.</p>
+    </header>
+
+    <!-- Kategori -->
+    <section class="mt-4 anim-fade-in delay-2">
+      <h2 class="text-h3 mb-2">Kategori</h2>
+      <div class="category-scroll" id="category-container">
+        <!-- Categories injected here -->
+      </div>
+    </section>
+
+    <!-- Daftar Materi -->
+    <section class="mt-4 anim-fade-up delay-4">
+      <div class="flex items-center justify-between mb-2">
+        <h2 class="text-h3">Materi Tersedia</h2>
+      </div>
+      
+      <div class="grid-materi" id="materi-container">
+        <!-- Skeletons while loading -->
+        <div class="skeleton lesson-card-skeleton"></div>
+        <div class="skeleton lesson-card-skeleton"></div>
+        <div class="skeleton lesson-card-skeleton"></div>
+        <div class="skeleton lesson-card-skeleton"></div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Bottom Navigation Component Injection -->
+  <div data-component="bottom-nav"></div>
+
+  <!-- Logic specific to index.html -->
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      try {
+        // Load data
+        const response = await fetch('./data/materi-list.json');
+        const data = await response.json();
+        
+        const catContainer = document.getElementById('category-container');
+        const materiContainer = document.getElementById('materi-container');
+        
+        // Function to render materi based on category
+        const renderMateri = (categoryId) => {
+          materiContainer.innerHTML = '';
+          const filteredMateri = categoryId === 'all' 
+            ? data.materi 
+            : data.materi.filter(m => m.category === categoryId);
+            
+          if (filteredMateri.length === 0) {
+            materiContainer.innerHTML = '<p class="text-secondary" style="grid-column: 1/-1; text-align: center; padding: 2rem;">Belum ada materi di kategori ini.</p>';
+            return;
+          }
+            
+          let materiHtml = '';
+          filteredMateri.forEach(item => {
+            const progress = Storage.getProgress(item.id) || 0;
+            materiHtml += `
+              <a href="./materi/${item.slug}/index.html" class="card card-interactive flex-col" style="text-decoration: none; color: inherit;">
+                <div style="height: 80px; background: var(--badge-bg); border-radius: var(--radius-sm); margin-bottom: var(--space-3); display: flex; align-items: center; justify-content: center; color: var(--accent-secondary);">
+                   <span class="material-icons" style="font-size: 32px;">menu_book</span>
+                </div>
+                <h3 class="text-h3" style="font-size: 1rem; line-height: 1.2; margin-bottom: 8px;">${item.title}</h3>
+                <div class="date-badge" style="margin-bottom: 12px; align-self: flex-start;">
+                  <span class="material-icons" style="font-size: 14px; margin-right: 4px;">schedule</span> ${item.estimatedTime}
+                </div>
+                
+                <!-- Progress bar mini -->
+                <div style="width: 100%; height: 6px; background: var(--bg-surface-alt); border-radius: 3px; margin-top: auto; margin-bottom: 4px; overflow: hidden;">
+                   <div style="width: ${progress}%; height: 100%; background: var(--accent-primary);"></div>
+                </div>
+              </a>
+            `;
+          });
+          materiContainer.innerHTML = materiHtml;
+        };
+
+        // Render Categories
+        let catHtml = '';
+        data.categories.forEach((cat, index) => {
+          catHtml += `
+            <button class="chip category-btn" data-id="${cat.id}">
+              <span class="material-icons" style="font-size: 16px;">${cat.icon}</span>
+              ${cat.label}
+            </button>
+          `;
+        });
+        catContainer.innerHTML = catHtml;
+
+        // Setup Category Click Listeners
+        const categoryBtns = document.querySelectorAll('.category-btn');
+        categoryBtns.forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            // Reset styles
+            categoryBtns.forEach(b => {
+              b.style.background = '';
+              b.style.color = '';
+            });
+            // Set active style
+            const target = e.currentTarget;
+            target.style.background = 'var(--chip-bg-active)';
+            target.style.color = 'var(--chip-text-active)';
+            
+            // Re-render materi
+            renderMateri(target.dataset.id);
+          });
+        });
+
+        // Initialize default category (first one)
+        if (categoryBtns.length > 0) {
+          categoryBtns[0].click();
+        }
+
+      } catch (e) {
+        console.error('Error loading materi data', e);
+      }
+    });
+  </script>
+</body>
+</html>
